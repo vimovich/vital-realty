@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Контакты — Vital Realty</title>
+<meta name="description" content="Офис Vital Realty в Tashkent City. Телефон, Telegram, адрес и форма заявки на подбор или продажу недвижимости.">
+<meta name="theme-color" content="#101211">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23101211'/%3E%3Cpath d='M6 9.5h28' stroke='%23b89a62' stroke-width='1.6'/%3E%3Cpath d='M9 9.5 20 32 31 9.5' stroke='%23e9e4da' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css?v=1">
+</head>
+<body data-page="contacts">
+
+<main>
+  <section class="page-hero page-hero--short">
+    <div class="wrap">
+      <div>
+        <nav class="crumbs" aria-label="Навигация"><a href="index.html">Главная</a><span aria-hidden="true">/</span><span>Контакты</span></nav>
+        <h1 class="d1">Приезжайте на кофе</h1>
+      </div>
+      <p class="lead">Первая встреча бесплатна и ни к чему не обязывает. Можно в офисе, у вас или онлайн.</p>
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="wrap contact">
+      <div class="contact__list">
+        <div><h3>Телефон</h3><a href="tel:+998712000000">+998 71 200 00 00</a></div>
+        <div><h3>Почта</h3><a href="mailto:hello@vitalrealty.uz">hello@vitalrealty.uz</a></div>
+        <div><h3>Офис</h3><p>Ташкент, Tashkent City,<br>бизнес-центр, 14 этаж</p></div>
+        <div><h3>Часы работы</h3><p>Понедельник – суббота, 9:00–20:00</p></div>
+        <div><h3>Мессенджеры</h3>
+          <div class="messengers"><a class="btn btn--line btn--sm" href="#" rel="noopener">Telegram</a><a class="btn btn--line btn--sm" href="#" rel="noopener">WhatsApp</a><a class="btn btn--line btn--sm" href="#" rel="noopener">Instagram</a></div></div>
+      </div>
+      <div class="panel-box" id="request">
+        <h2 class="d3" style="margin-bottom:8px">Оставить запрос</h2>
+        <p class="small" style="margin-bottom:26px">Брокер перезвонит в течение 15 минут в рабочее время.</p>
+        <form class="form" data-lead>
+          <div class="form__row">
+            <div class="field"><label for="r-name">Имя</label><input class="input" id="r-name" autocomplete="name" required></div>
+            <div class="field"><label for="r-phone">Телефон</label><input class="input" id="r-phone" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="field"><span class="field__label">Задача</span>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="goal" checked><span>Купить</span></label>
+              <label class="chip"><input type="radio" name="goal"><span>Продать</span></label>
+              <label class="chip"><input type="radio" name="goal"><span>Снять</span></label>
+              <label class="chip"><input type="radio" name="goal"><span>Сдать</span></label>
+              <label class="chip"><input type="radio" name="goal"><span>Инвестировать</span></label>
+            </div></div>
+          <div class="form__row">
+            <div class="field"><label for="r-budget">Бюджет</label>
+              <select class="select" id="r-budget"><option>Пока не знаю</option><option>до $300 000</option><option>$300 000 – 700 000</option><option>$700 000 – 1,5 млн</option><option>от $1,5 млн</option></select></div>
+            <div class="field"><label for="r-contact">Как связаться</label>
+              <select class="select" id="r-contact"><option>Звонок</option><option>Telegram</option><option>WhatsApp</option></select></div>
+          </div>
+          <div class="field"><label for="r-msg">Комментарий</label><textarea class="textarea" id="r-msg" placeholder="Район, количество спален, сроки"></textarea></div>
+          <button class="btn btn--solid" type="submit">Отправить запрос</button>
+          <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+          <div class="form__ok"><b>Запрос отправлен</b><p class="muted">Брокер перезвонит вам в течение 15 минут в рабочее время.</p></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="wrap">
+      <div class="map" style="aspect-ratio:16/6"><iframe title="Офис Vital Realty на карте" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Tashkent%20City%20Park&z=15&output=embed"></iframe></div>
+    </div>
+  </section>
+</main>
+
+<div id="footer"></div>
+
+<script src="data.js?v=1"></script>
+<script src="site.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vital Realty — элитная недвижимость Ташкента</title>
+<meta name="description" content="Vital Realty — частный брокер элитной недвижимости в Ташкенте. Пентхаусы Tashkent City, виллы и дома, аренда премиум-класса. Закрытые продажи и юридическое сопровождение.">
+<meta property="og:title" content="Vital Realty — элитная недвижимость Ташкента">
+<meta property="og:description" content="Пентхаусы, виллы и дома в Ташкенте. Закрытые продажи и сопровождение до ключей.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1565623833408-d77e39b88af6?w=1200&q=75&auto=format&fit=crop">
+<meta name="theme-color" content="#101211">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23101211'/%3E%3Cpath d='M6 9.5h28' stroke='%23b89a62' stroke-width='1.6'/%3E%3Cpath d='M9 9.5 20 32 31 9.5' stroke='%23e9e4da' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css?v=1">
+<script>document.documentElement.classList.add('js','frames')</script>
+</head>
+<body data-page="home">
+
+<nav class="pager" id="pager" aria-label="Разделы главной страницы"></nav>
+
+<main class="stage" id="stage">
+
+  <!-- Hero -->
+  <section class="panel hero" id="hero" data-title="Главная">
+    <div class="hero__media">
+      <img class="hero__img" src="https://images.unsplash.com/photo-1565623833408-d77e39b88af6?w=2000&q=80&auto=format&fit=crop" alt="Вечерний вид на город из пентхауса" fetchpriority="high">
+      <canvas class="hero__gl" id="gl" aria-hidden="true"></canvas>
+    </div>
+    <div class="hero__shade"></div>
+    <div class="panel__inner">
+      <div class="hero__top">
+        <h1 class="hero__title d1"><span class="ln"><span>Недвижимость,</span></span><span class="ln"><span>о которой не пишут</span></span><span class="ln"><span>в объявлениях</span></span></h1>
+        <div class="hero__aside" data-h="fade">
+          <p>Vital Realty — частный брокер элитной недвижимости в Ташкенте. Семь из десяти наших сделок проходят закрыто, без публикации и лишних просмотров.</p>
+          <p>Проверяем документы, ведём переговоры и остаёмся рядом до передачи ключей.</p>
+        </div>
+      </div>
+      <form class="search" id="search" action="catalog.html" data-h="fade">
+        <div class="field"><label for="s-deal">Сделка</label>
+          <select class="select" id="s-deal" name="deal"><option value="sale">Купить</option><option value="rent">Снять</option></select></div>
+        <div class="field"><label for="s-type">Тип</label>
+          <select class="select" id="s-type" name="type"><option value="">Любой</option></select></div>
+        <div class="field"><label for="s-district">Район</label>
+          <select class="select" id="s-district" name="district"><option value="">Весь Ташкент</option></select></div>
+        <div class="field"><label for="s-budget">Бюджет до</label>
+          <select class="select" id="s-budget" name="max"></select></div>
+        <button class="btn btn--solid" type="submit">Найти объекты</button>
+      </form>
+    </div>
+    <div class="panel__shade"></div>
+  </section>
+
+  <!-- Featured collection -->
+  <section class="panel col" id="collection" data-title="Избранное">
+    <div class="panel__inner">
+      <div class="col__head">
+        <div>
+          <h2 class="d2" data-a="up">Избранные объекты</h2>
+        </div>
+        <p class="lead" data-a="up">Три предложения, которые наши брокеры показали бы первыми. Каждое проверено юристом до публикации.</p>
+        <a class="link" href="catalog.html" data-a="fade">Все объекты <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+      </div>
+      <div class="col__grid" id="colGrid"></div>
+    </div>
+    <div class="panel__shade"></div>
+  </section>
+
+  <!-- Signature property -->
+  <section class="panel sig" id="signature" data-title="Пентхаус Sky 38">
+    <div class="sig__media" id="sigMedia"><img src="https://images.unsplash.com/photo-1697704711744-1f33b7c67b85?w=2000&q=80&auto=format&fit=crop" alt="Башни Tashkent City" loading="lazy"></div>
+    <div class="panel__inner">
+      <div class="sig__box">
+        <p class="label" data-a="up">Объект недели, Tashkent City</p>
+        <h2 class="d2" data-a="up">Пентхаус Sky 38</h2>
+        <p class="lead" data-a="up">Весь верхний этаж башни, терраса 64 м² и панорама на парк и горы. Показы проходят по записи, только с брокером.</p>
+        <div class="sig__price" data-a="up">$1 450 000</div>
+        <div class="sig__specs" data-a="up">
+          <div><b>312 м²</b><span>площадь</span></div>
+          <div><b>4</b><span>спальни</span></div>
+          <div><b>38</b><span>этаж из 38</span></div>
+          <div><b>2025</b><span>дом сдан</span></div>
+        </div>
+        <div class="sig__actions" data-a="fade">
+          <a class="btn btn--solid" href="property.html?id=vr-101">Смотреть объект</a>
+          <a class="btn btn--line" href="property.html?id=vr-101#viewing">Записаться на показ</a>
+        </div>
+      </div>
+    </div>
+    <div class="panel__shade"></div>
+  </section>
+
+  <!-- Districts -->
+  <section class="panel dis" id="districts" data-title="Районы">
+    <div class="panel__inner">
+      <div class="dis__left">
+        <h2 class="d2" data-a="up">Где мы работаем</h2>
+        <ul class="dis__list" id="disList"></ul>
+      </div>
+      <div class="dis__media" id="disMedia" data-a="fade">
+        <div class="dis__cap"><p id="disNote"></p><span class="num" id="disPrice"></span></div>
+      </div>
+    </div>
+    <div class="panel__shade"></div>
+  </section>
+
+  <!-- Services -->
+  <section class="panel srv" id="services" data-title="Услуги">
+    <div class="panel__inner">
+      <div class="col__head">
+        <h2 class="d2" data-a="up">Чем мы помогаем</h2>
+        <a class="link" href="services.html" data-a="fade">Все услуги и условия <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+      </div>
+      <div class="srv__grid">
+        <a class="srv__item" href="services.html#buy" data-a="up">
+          <div><h3>Покупка</h3><p>Подбираем из открытого рынка и закрытой базы, торгуемся за вас, проверяем каждую бумагу.</p></div>
+          <div class="ph"><img src="https://images.unsplash.com/photo-1757924461488-ef9ad0670978?w=800&q=70&auto=format&fit=crop" alt="" loading="lazy"></div>
+        </a>
+        <a class="srv__item" href="services.html#sell" data-a="up">
+          <div><h3>Продажа</h3><p>Оцениваем, готовим объект к съёмке, показываем только проверенным покупателям.</p></div>
+          <div class="ph"><img src="https://images.unsplash.com/photo-1706808849780-7a04fbac83ef?w=800&q=70&auto=format&fit=crop" alt="" loading="lazy"></div>
+        </a>
+        <a class="srv__item" href="services.html#rent" data-a="up">
+          <div><h3>Аренда</h3><p>Квартиры и дома для семей, руководителей и представительств компаний.</p></div>
+          <div class="ph"><img src="https://images.unsplash.com/photo-1758448511322-8bfc73daf606?w=800&q=70&auto=format&fit=crop" alt="" loading="lazy"></div>
+        </a>
+        <a class="srv__item" href="services.html#invest" data-a="up">
+          <div><h3>Инвестиции</h3><p>Объекты с арендатором и расчётом доходности, управление после покупки.</p></div>
+          <div class="ph"><img src="https://images.unsplash.com/photo-1681195579718-e738abcaa178?w=800&q=70&auto=format&fit=crop" alt="" loading="lazy"></div>
+        </a>
+      </div>
+    </div>
+    <div class="panel__shade"></div>
+  </section>
+
+  <!-- Process + facts -->
+  <section class="panel proc" id="process" data-title="Как мы работаем">
+    <div class="panel__inner">
+      <h2 class="d2" data-a="up">Как проходит сделка</h2>
+      <ol class="steps">
+        <li data-a="up"><span class="num">1</span><h3>Знакомство</h3><p>Встречаемся, обсуждаем бюджет, район и то, как вы живёте. Это бесплатно.</p></li>
+        <li data-a="up"><span class="num">2</span><h3>Подборка</h3><p>Через 48 часов присылаем 5–7 объектов, включая те, что не продаются открыто.</p></li>
+        <li data-a="up"><span class="num">3</span><h3>Показы и проверка</h3><p>Организуем показы в удобное время. Юрист проверяет документы и историю объекта.</p></li>
+        <li data-a="up"><span class="num">4</span><h3>Сделка и ключи</h3><p>Ведём переговоры, готовим договор, присутствуем у нотариуса и при передаче.</p></li>
+      </ol>
+      <div class="facts" data-a="up">
+        <div><b data-count="12">0</b><span>лет на рынке Ташкента</span></div>
+        <div><b><span data-count="640">0</span>+</b><span>закрытых сделок</span></div>
+        <div><b><span data-count="70">0</span>%</b><span>продаж без публикации</span></div>
+        <div><b>$<span data-count="410">0</span> млн</b><span>общий объём сделок</span></div>
+      </div>
+    </div>
+    <div class="panel__shade"></div>
+  </section>
+
+  <!-- Contact -->
+  <section class="panel cta" id="contact" data-title="Связаться">
+    <div class="cta__bg"><img src="https://images.unsplash.com/photo-1680789337218-aea1b03ccc41?w=2000&q=70&auto=format&fit=crop" alt="" loading="lazy"></div>
+    <div class="panel__inner">
+      <div class="cta__left">
+        <h2 class="d2" data-a="up">Расскажите, что вы ищете</h2>
+        <p class="lead" data-a="up">Брокер перезвонит в течение 15 минут в рабочее время и пришлёт первую подборку в течение двух дней.</p>
+        <div class="cta__contacts" data-a="up">
+          <a href="tel:+998712000000">+998 71 200 00 00</a>
+          <a href="mailto:hello@vitalrealty.uz">hello@vitalrealty.uz</a>
+          <span>Ташкент, Tashkent City, бизнес-центр, 14 этаж</span>
+        </div>
+      </div>
+      <form class="cta__form form" data-lead data-a="up">
+        <div class="form__row">
+          <div class="field"><label for="c-name">Имя</label><input class="input" id="c-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="c-phone">Телефон</label><input class="input" id="c-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <div class="field"><span class="field__label">Что ищете</span>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="goal" value="buy" checked><span>Купить</span></label>
+            <label class="chip"><input type="radio" name="goal" value="sell"><span>Продать</span></label>
+            <label class="chip"><input type="radio" name="goal" value="rent"><span>Снять</span></label>
+            <label class="chip"><input type="radio" name="goal" value="invest"><span>Инвестировать</span></label>
+          </div>
+        </div>
+        <button class="btn btn--solid" type="submit">Отправить заявку</button>
+        <p class="form__note">Отправляя заявку, вы соглашаетесь на обработку персональных данных.</p>
+        <div class="form__ok"><b>Заявка отправлена</b><p class="muted">Брокер перезвонит вам в течение 15 минут в рабочее время.</p></div>
+      </form>
+      <div class="cta__foot">
+        <span>© 2026 Vital Realty. Демо-версия: объекты и цены приведены для примера</span>
+        <nav aria-label="Разделы"><a href="catalog.html">Объекты</a><a href="services.html">Услуги</a><a href="about.html">О компании</a><a href="contacts.html">Контакты</a></nav>
+      </div>
+    </div>
+    <div class="panel__shade"></div>
+  </section>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="data.js?v=1"></script>
+<script src="site.js?v=1"></script>
+<script src="home.js?v=1"></script>
+</body>
+</html>

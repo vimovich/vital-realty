@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>О компании — Vital Realty</title>
+<meta name="description" content="Vital Realty — брокер элитной недвижимости в Ташкенте с 2014 года. История, принципы работы и команда брокеров.">
+<meta name="theme-color" content="#101211">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23101211'/%3E%3Cpath d='M6 9.5h28' stroke='%23b89a62' stroke-width='1.6'/%3E%3Cpath d='M9 9.5 20 32 31 9.5' stroke='%23e9e4da' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css?v=1">
+</head>
+<body data-page="about">
+
+<main>
+  <section class="page-hero">
+    <div class="page-hero__bg"><img src="https://images.unsplash.com/photo-1715966743489-0ac1138420a5?w=2000&q=75&auto=format&fit=crop" alt="" fetchpriority="high"></div>
+    <div class="wrap">
+      <div>
+        <nav class="crumbs" aria-label="Навигация"><a href="index.html">Главная</a><span aria-hidden="true">/</span><span>О компании</span></nav>
+        <h1 class="d1">Двенадцать лет на рынке, который мы знаем по именам</h1>
+      </div>
+      <p class="lead">Мы знаем собственников, застройщиков и историю почти каждого премиального дома в Ташкенте. Поэтому лучшие предложения часто попадают к нам раньше, чем на рынок.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split">
+      <div class="split__media rv-img"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=1100&q=75&auto=format&fit=crop" alt="Азиз Каримов, основатель Vital Realty" loading="lazy"></div>
+      <div>
+        <p class="quote">Мы не продаём квадратные метры. Мы помогаем людям выбрать место, где пройдут следующие двадцать лет их жизни.</p>
+        <p class="small">Азиз Каримов, основатель Vital Realty</p>
+        <div class="prose" style="margin-top:36px">
+          <p>Vital Realty появилась в 2014 году как частная практика одного брокера. Первые клиенты пришли по рекомендациям и продолжают приходить так же: больше половины сделок мы проводим для тех, кто уже покупал или продавал с нами.</p>
+          <p>Сегодня в команде брокеры по жилой, загородной и коммерческой недвижимости, собственный юрист и съёмочная группа. Мы работаем только с объектами, которые проверили сами.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="wrap stats">
+      <div><b>12</b><span>лет на рынке</span></div>
+      <div><b>640+</b><span>закрытых сделок</span></div>
+      <div><b>58%</b><span>клиентов приходят повторно</span></div>
+      <div><b>$410 млн</b><span>общий объём сделок</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head"><h2 class="d2">Во что мы верим</h2><p>Три правила, по которым работает каждый брокер команды.</p></div>
+      <div class="values">
+        <div><h3>Тишина</h3><p>Ваши данные, бюджет и сам факт сделки остаются между нами. Объекты клиентов мы публикуем только с их согласия.</p></div>
+        <div><h3>Проверка</h3><p>Мы не показываем объект, пока юрист не проверил документы. Если что-то не так, вы узнаете об этом первыми.</p></div>
+        <div><h3>Честная цена</h3><p>Называем реальную стоимость по данным сделок, даже если она ниже ожиданий. Это экономит месяцы ожидания.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--line">
+    <div class="wrap">
+      <div class="sec-head"><h2 class="d2">Команда</h2><p>За каждым направлением отвечает брокер с опытом от пяти лет. Напишите напрямую тому, кто вам нужен.</p></div>
+      <div class="team" id="team"></div>
+    </div>
+  </section>
+</main>
+
+<div id="footer"></div>
+
+<script src="data.js?v=1"></script>
+<script src="site.js?v=1"></script>
+<script>
+(function () {
+  var t = document.getElementById('team');
+  t.innerHTML = Object.keys(VR.agents).map(function (k) {
+    var a = VR.agents[k];
+    return '<article class="member"><div class="member__ph rv-img"><img src="' + a.photo + '" alt="' + a.name + '" loading="lazy"></div>' +
+      '<h3>' + a.name + '</h3><p>' + a.role + '</p><a href="tel:' + a.phone.replace(/\s/g, '') + '">' + a.phone + '</a></article>';
+  }).join('');
+  VRUI.observeReveals(t);
+})();
+</script>
+</body>
+</html>

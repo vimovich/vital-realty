@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Объект — Vital Realty</title>
+<meta name="description" content="Подробная информация об объекте Vital Realty: фото, характеристики, расположение, расчёт ипотеки и запись на показ.">
+<meta name="theme-color" content="#101211">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23101211'/%3E%3Cpath d='M6 9.5h28' stroke='%23b89a62' stroke-width='1.6'/%3E%3Cpath d='M9 9.5 20 32 31 9.5' stroke='%23e9e4da' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css?v=1">
+</head>
+<body data-page="catalog">
+
+<main id="property">
+  <div class="p-hero"><div class="wrap" id="pTop"></div></div>
+  <div class="wrap p-body" id="pBody"></div>
+  <section class="section section--line" id="similarWrap" hidden>
+    <div class="wrap">
+      <div class="sec-head"><h2 class="d2">Похожие объекты</h2><p>Подобрали по району, типу и бюджету. Брокер покажет несколько объектов за один выезд.</p></div>
+      <div class="grid" id="similar"></div>
+    </div>
+  </section>
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Фотографии объекта">
+  <div class="lightbox__top"><span id="lbCount"></span><button class="icon-btn" type="button" id="lbClose" aria-label="Закрыть"></button></div>
+  <div class="lightbox__img"><img id="lbImg" alt=""></div>
+  <div class="lightbox__nav"><button class="icon-btn" type="button" id="lbPrev" aria-label="Предыдущее фото"></button><button class="icon-btn" type="button" id="lbNext" aria-label="Следующее фото"></button></div>
+</div>
+
+<div id="footer"></div>
+
+<script src="data.js?v=1"></script>
+<script src="site.js?v=1"></script>
+<script src="property.js?v=1"></script>
+</body>
+</html>

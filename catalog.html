@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Объекты — Vital Realty</title>
+<meta name="description" content="Каталог элитной недвижимости в Ташкенте: пентхаусы Tashkent City, квартиры в клубных домах, виллы, таунхаусы и коммерция. Продажа и аренда.">
+<meta name="theme-color" content="#101211">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23101211'/%3E%3Cpath d='M6 9.5h28' stroke='%23b89a62' stroke-width='1.6'/%3E%3Cpath d='M9 9.5 20 32 31 9.5' stroke='%23e9e4da' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css?v=1">
+</head>
+<body data-page="catalog">
+
+<main>
+  <section class="page-hero page-hero--short">
+    <div class="wrap">
+      <div>
+        <nav class="crumbs" aria-label="Навигация"><a href="index.html">Главная</a><span aria-hidden="true">/</span><span>Объекты</span></nav>
+        <h1 class="d1">Объекты</h1>
+      </div>
+      <p class="lead">Здесь опубликована примерно треть нашей базы. Остальные объекты продаются закрыто: брокер покажет их после короткого знакомства.</p>
+    </div>
+  </section>
+
+  <div class="filters" id="filters">
+    <div class="wrap">
+      <div class="filters__row">
+        <div class="seg" role="group" aria-label="Тип сделки">
+          <button type="button" data-deal="sale" class="is-on" aria-pressed="true">Купить</button>
+          <button type="button" data-deal="rent" aria-pressed="false">Снять</button>
+        </div>
+        <div class="field"><label for="f-type">Тип</label><select class="select" id="f-type"><option value="">Любой</option></select></div>
+        <div class="field"><label for="f-district">Район</label><select class="select" id="f-district"><option value="">Весь Ташкент</option></select></div>
+        <div class="field"><label for="f-max">Бюджет до</label><select class="select" id="f-max"></select></div>
+        <div class="field"><label for="f-beds">Спальни</label>
+          <select class="select" id="f-beds"><option value="">Любое число</option><option value="2">от 2</option><option value="3">от 3</option><option value="4">от 4</option><option value="5">от 5</option></select></div>
+        <div class="filters__more">
+          <button type="button" class="btn btn--line btn--sm" id="f-fav" aria-pressed="false">Избранное <span id="favCount"></span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="wrap">
+    <div class="results-bar">
+      <p class="d4" id="resultsTitle" aria-live="polite"></p>
+      <div class="field" style="min-width:220px"><label for="f-sort">Сортировка</label>
+        <select class="select" id="f-sort">
+          <option value="new">Сначала избранное агентства</option>
+          <option value="price-asc">Цена по возрастанию</option>
+          <option value="price-desc">Цена по убыванию</option>
+          <option value="area-desc">Сначала просторные</option>
+        </select></div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split">
+      <div class="split__media rv-img"><img src="https://images.unsplash.com/photo-1643376452350-97eadd2c417f?w=1200&q=75&auto=format&fit=crop" alt="Гостиная в частной резиденции" loading="lazy"></div>
+      <div>
+        <h2 class="d2">Не нашли подходящий вариант?</h2>
+        <p class="lead" style="margin:22px 0 32px">Опишите, что ищете. Брокер соберёт подборку из закрытой базы и пришлёт её в течение двух рабочих дней.</p>
+        <a class="btn btn--solid" href="contacts.html#request">Оставить запрос</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer"></div>
+
+<script src="data.js?v=1"></script>
+<script src="site.js?v=1"></script>
+<script src="catalog.js?v=1"></script>
+</body>
+</html>
